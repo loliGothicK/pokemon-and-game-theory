@@ -1,0 +1,59 @@
+# site configs
+site_name: Pokémon and Game Theory
+site_url: https://mitamalab.github.io/pokemon-and-game-theory/
+site_description: Pokémon and Game Theory
+site_author: Mitama
+
+# repository
+repo_name: pokemon-and-game-theory
+repo_url: https://github.com/MitamaLab/pokemon-and-game-theory
+repo_description: Pokémon and Game Theory
+
+
+# theme settings
+theme:
+  name: 'material'
+  language: 'ja'
+  icon:
+    logo: material/cloud
+    repo: fontawesome/brands/github-alt
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  features:
+    - navigation.tabs
+    - navigation.instant
+  extra:
+    social:
+      - icon: fontawesome/brands/twitter
+        link: https://twitter.com/mitama_rs
+
+# extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.smartsymbols
+  - mdx_math:
+      enable_dollar_delimiter: true
+  - toc:
+      permalink: True
+      separator: "_"
+      baselevel: 1
+
+# pages
+nav:
+  - Home: index.md
+  - '101': basics.md
+  - Article: 
+    - '1. 盤面を把握する': article/section_1.md
+    - '2. 先読みをする': article/section_2.md
+    - '3. 45秒で効率的に思考するには': article/section_3.md
+    - '4. 落穂ひろい': article/section_5.md
+    - '5. まとめ': article/section_6.md
+  
