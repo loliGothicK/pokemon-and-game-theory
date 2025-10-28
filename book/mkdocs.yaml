@@ -7,7 +7,6 @@ site_author: Mitama
 # repository
 repo_name: pokemon-and-game-theory
 repo_url: https://github.com/MitamaLab/pokemon-and-game-theory
-repo_description: Pokémon and Game Theory
 
 
 # theme settings
@@ -45,6 +44,14 @@ markdown_extensions:
       permalink: True
       separator: "_"
       baselevel: 1
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+plugins:
+  - glightbox
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # pages
 nav:
@@ -56,4 +63,3 @@ nav:
     - '3. 45秒で効率的に思考するには': article/section_3.md
     - '4. 落穂ひろい': article/section_5.md
     - '5. まとめ': article/section_6.md
-  
